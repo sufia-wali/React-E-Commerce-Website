@@ -7,9 +7,9 @@ import Loading from './Loading'
 import Product from './Product'
 
 const FeaturedProducts = () => {
-  const{featured_products,
-    products_loading,
-    products_error} = useProductsContext();
+
+  const{featured_products, products_loading, products_error} = useProductsContext();
+
     if(products_loading){
       return(<Loading/>)
     }
